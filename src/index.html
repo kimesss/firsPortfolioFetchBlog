@@ -6,14 +6,35 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .aboutMe img{
+            height: 400px;
+        }
+        .aboutMe{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        ul{
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            font-size: 4em;
+        }
+    </style>
 </head>
 <body>
-<div>hello
-<mark-down>
-    # Start
-    Pierwszy test
-    inilne`
-</mark-down>
-</div>
+<section class="aboutMe" id="aboutMe">
+    <img src="img/me.jpg" alt="me">
+</section>
+<section>
+    <ul>
+        <li class="game" id="gamee">🎮</li>
+        <li class="blog">📝</li>
+        <li class="jokee" id="jokee">🤣</li>
+    </ul>
+</section>
 </body>
 </html>

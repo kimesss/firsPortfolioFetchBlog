@@ -1,8 +1,8 @@
 import { GitHubRepo } from './GitHubRepo';
 
 const REPOS_URL = 'https://api.github.com/users/kimesss/repos';
-const POST_URL = 'https://github.com/kimesss/kimesss.github.io/blob/main/Blog/';
-
+const POST_URL = 'https://raw.githubusercontent.com/kimesss/kimesss.github.io/main/Blog/';
+const ABOUT_ME_URL = 'https://raw.githubusercontent.com/kimesss/kimesss.github.io/main/Blog/';
 const convert = ({
   name,
   stargazers_count: stars,
@@ -26,6 +26,15 @@ export default function getRepos() {
 
 export function getBlogPost(name) {
   return fetch(`${POST_URL}${name}`)
+    .then((response) => {
+      if (response.ok) {
+        return response.text();
+      } throw Error('Respons not 200');
+    });
+}
+
+export function getAboutMe(name) {
+  return fetch(`${ABOUT_ME_URL}${name}`)
     .then((response) => {
       if (response.ok) {
         return response.text();
