@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="39fad172-8342-4ae9-94f5-372aa66768a7" name="Changes" comment="Start Project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/github/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +58,7 @@
       <workItem from="1637179306424" duration="85000" />
       <workItem from="1637179471431" duration="10396000" />
       <workItem from="1637233653250" duration="14299000" />
-      <workItem from="1637326208495" duration="14923000" />
+      <workItem from="1637326208495" duration="16153000" />
     </task>
     <task id="LOCAL-00001" summary="Start Project">
       <created>1637333437486</created>
@@ -76,7 +67,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637333437486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Start Project">
+      <created>1637347764736</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637347764736</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Start Project">
+      <created>1637348165831</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637348165831</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

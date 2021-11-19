@@ -17,7 +17,7 @@ const convert = ({
 });
 
 export default function get() {
-  return fetch('http://api.icndb.com/jokes/random')
+  return fetch('https://api.icndb.com/jokes/random')
     .then((response) => response.json())
     .then((arr) => convert(arr)).then((q) => alert(q));
 }

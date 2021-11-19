@@ -131,7 +131,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mark
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ get)\n/* harmony export */ });\nclass Joke {\n  constructor({ joke }) {\n    this.joke = joke;\n  }\n\n  toString() {\n    return `${this.joke} `;\n  }\n}\nconst convert = ({\n  value: {\n    joke,\n\n  },\n}) => new Joke({\n  joke,\n});\n\nfunction get() {\n  return fetch('http://api.icndb.com/jokes/random')\n    .then((response) => response.json())\n    .then((arr) => convert(arr)).then((q) => alert(q));\n}\n\n\n//# sourceURL=webpack://webbb/./src/joke/Joke.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ get)\n/* harmony export */ });\nclass Joke {\n  constructor({ joke }) {\n    this.joke = joke;\n  }\n\n  toString() {\n    return `${this.joke} `;\n  }\n}\nconst convert = ({\n  value: {\n    joke,\n\n  },\n}) => new Joke({\n  joke,\n});\n\nfunction get() {\n  return fetch('https://api.icndb.com/jokes/random')\n    .then((response) => response.json())\n    .then((arr) => convert(arr)).then((q) => alert(q));\n}\n\n\n//# sourceURL=webpack://webbb/./src/joke/Joke.js?");
 
 /***/ })
 
