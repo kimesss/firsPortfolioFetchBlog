@@ -12,6 +12,10 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({
     template: './src/index.html',
   }),
+  new HtmlWebpackPlugin({
+    template: './src/blog/index.html',
+    filename: 'blog/index.html',
+  }),
   new CopyPlugin({
     patterns: [
       { from: './src/img/me.jpg', to: 'img' },
