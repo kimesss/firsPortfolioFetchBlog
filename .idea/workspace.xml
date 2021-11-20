@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="39fad172-8342-4ae9-94f5-372aa66768a7" name="Changes" comment="Project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/blog/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blog/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
       <workItem from="1637326208495" duration="43207000" />
       <workItem from="1637379542909" duration="14000" />
       <workItem from="1637379931717" duration="1391000" />
-      <workItem from="1637402494135" duration="6218000" />
+      <workItem from="1637402494135" duration="8738000" />
     </task>
     <task id="LOCAL-00001" summary="Start Project">
       <created>1637333437486</created>
@@ -175,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637379378485</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Project">
+      <created>1637411001733</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1637411001733</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

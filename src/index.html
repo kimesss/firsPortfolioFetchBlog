@@ -7,24 +7,38 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Document</title>
     <style>
+        .aboutMe {
+            margin: 25px;
+            max-width: 90vw;
+        }
         .aboutMe img{
             height: 400px;
+            margin: 25px;
         }
         .aboutMe{
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
         }
         ul{
-            cursor: pointer;
             list-style: none;
             display: flex;
             text-align: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
             font-size: 4em;
+        }
+        ul li {
+            cursor: pointer;
         }
         a{
             text-decoration: none;
+        }
+
+        @media (max-width: 656px){
+            .aboutMe{
+                display: block;
+                text-align: center;
+            }
         }
     </style>
 </head>
