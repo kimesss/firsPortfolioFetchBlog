@@ -6,7 +6,7 @@
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index_bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pageHendler/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pageHendler/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1637379542909" duration="14000" />
       <workItem from="1637379931717" duration="1391000" />
       <workItem from="1637402494135" duration="11876000" />
-      <workItem from="1637423839065" duration="16428000" />
+      <workItem from="1637423839065" duration="18400000" />
     </task>
     <task id="LOCAL-00001" summary="Start Project">
       <created>1637333437486</created>
@@ -203,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637416179742</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Project">
+      <created>1637448878847</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1637448878847</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Project">
+      <created>1637449103028</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1637449103028</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
