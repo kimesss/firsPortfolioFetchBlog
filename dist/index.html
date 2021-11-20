@@ -11,7 +11,9 @@
             margin: 0;
             padding: 0;
         }
-
+        main{
+            height: 100vh;
+        }
         .aboutMe {
             margin: 50px;
         }
@@ -52,16 +54,21 @@
     </style>
 <script defer src="index_bundle.js"></script></head>
 <body>
+<main class="firstPage" id="firstPage" >
 <section class="aboutMe" id="aboutMe">
     <img src="img/me.jpg" alt="me">
     <about-me></about-me>
 </section>
-<section id="last">
-    <ul>
-        <li class="game" id="gamee" onclick="controls.game()">🎮</li>
-        <li class="blog"><a href="blog/index.html">📝</a></li>
-        <li class="jokee" id="jokee" onclick="controls.get()">🤣</li>
-    </ul>
-</section>
+    <section id="last">
+        <ul>
+            <li class="game" id="gamee" onclick="controls.game()">🎮</li>
+            <li class="blog"><a href="blog/index.html" >📝</a></li>
+            <li class="jokee" id="jokee" onclick="controls.get()">🤣</li>
+        </ul>
+    </section>
+</main>
+<main id="secPagge">
+    siema gitara
+</main>
 </body>
 </html>

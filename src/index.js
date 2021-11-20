@@ -5,7 +5,9 @@ import { getAboutMe, getBlogPost } from './github/service';
 import get from './joke/Joke';
 import init from './blog/index';
 import initt from './aboutMe/index';
+import piszewkonso from './pageHendler/index';
 
+piszewkonso();
 initt();
 // const section = document.getElementById('aboutMe');
 // getAboutMe('about-me.md').then((blogPost) => {
@@ -17,6 +19,7 @@ initt();
 window.controls = {
   game,
   get,
+  piszewkonso,
 };
 
 // const jokee = document.getElementById('jokee');
