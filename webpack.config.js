@@ -30,6 +30,11 @@ module.exports = {
   }),
   new CopyPlugin({
     patterns: [
+      { from: './src/img/me2.jpg', to: 'img' },
+    ],
+  }),
+  new CopyPlugin({
+    patterns: [
       { from: './src/img/me.jpg', to: 'img' },
     ],
   })],
