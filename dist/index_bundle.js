@@ -69,6 +69,50 @@ eval("/* globals MutationObserver, HTMLElement */\nconst each = (arr, fn) => {\n
 
 /***/ }),
 
+/***/ "./src/aboutMe/component.js":
+/*!**********************************!*\
+  !*** ./src/aboutMe/component.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ AboutMe)\n/* harmony export */ });\n/* harmony import */ var _github_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../github/service */ \"./src/github/service.js\");\n\n\nclass AboutMe extends HTMLElement {\n  constructor() {\n    super();\n    this.shadow = this.attachShadow({ mode: 'open' });\n    this.render();\n  }\n\n  async render() {\n    const md = document.createElement('mark-down');\n    md.textContent = (await (0,_github_service__WEBPACK_IMPORTED_MODULE_0__.getBlogPost)('about-me.md'));\n    // this.shadow.appendChild(md);\n    this.shadow.innerHTML = `${md.outerHTML}`;\n  }\n}\n\n\n//# sourceURL=webpack://webbb/./src/aboutMe/component.js?");
+
+/***/ }),
+
+/***/ "./src/aboutMe/index.js":
+/*!******************************!*\
+  !*** ./src/aboutMe/index.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ \"./src/aboutMe/component.js\");\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => customElements.define('about-me', _component__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\n\n\n//# sourceURL=webpack://webbb/./src/aboutMe/index.js?");
+
+/***/ }),
+
+/***/ "./src/blog/components.js":
+/*!********************************!*\
+  !*** ./src/blog/components.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"BlogPost\": () => (/* binding */ BlogPost)\n/* harmony export */ });\n/* harmony import */ var _github_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../github/service */ \"./src/github/service.js\");\n/* eslint-disable import/prefer-default-export,no-undef,no-unused-vars */\n\n\nclass BlogPost extends HTMLElement {\n  // noinspection JSUnusedGlobalSymbols\n  static get observedAttributes() {\n    return ['post-name'];\n  }\n\n  constructor() {\n    super();\n    this.shadow = this.attachShadow({ mode: 'open' });\n  }\n\n  async render() {\n    this.clean();\n    const name = this.getAttribute('post-name');\n    const md = document.createElement('mark-down');\n    md.textContent = (await (0,_github_service__WEBPACK_IMPORTED_MODULE_0__.getBlogPost)(`${name}.md`));\n    // this.shadow.appendChild(md);\n    this.shadow.innerHTML = `${md.outerHTML}`;\n  }\n\n  // noinspection JSUnusedGlobalSymbols\n  attributeChangedCallback(name, oldValue, newValue) {\n    this.render();\n  }\n\n  clean() {\n    this.shadow.childNodes.forEach((child) => child.remove());\n  }\n}\n\n\n//# sourceURL=webpack://webbb/./src/blog/components.js?");
+
+/***/ }),
+
+/***/ "./src/blog/index.js":
+/*!***************************!*\
+  !*** ./src/blog/index.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components */ \"./src/blog/components.js\");\n/* eslint-disable no-undef */\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => customElements.define('blog-post', _components__WEBPACK_IMPORTED_MODULE_0__.BlogPost));\n\n\n//# sourceURL=webpack://webbb/./src/blog/index.js?");
+
+/***/ }),
+
 /***/ "./src/game/random.js":
 /*!****************************!*\
   !*** ./src/game/random.js ***!
@@ -120,7 +164,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var markdown_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! markdown-element */ \"./node_modules/markdown-element/index.js\");\n/* harmony import */ var markdown_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(markdown_element__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _game_random__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./game/random */ \"./src/game/random.js\");\n/* harmony import */ var _github_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./github/index */ \"./src/github/index.js\");\n/* harmony import */ var _joke_Joke__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./joke/Joke */ \"./src/joke/Joke.js\");\n/* harmony import */ var _github_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./github/service */ \"./src/github/service.js\");\n\n\n\n\n\n\n\nconst section = document.getElementById('aboutMe');\n(0,_github_service__WEBPACK_IMPORTED_MODULE_4__.getAboutMe)('about-me.md').then((blogPost) => {\n  const me = document.createElement('mark-down');\n  me.textContent = blogPost;\n  section.appendChild(me);\n});\n\nconst jokee = document.getElementById('jokee');\njokee.addEventListener('click', _joke_Joke__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nconst gamee = document.getElementById('gamee');\ngamee.addEventListener('click', _game_random__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n// const blog = document.getElementById('blog');\n// jokee.addEventListener('click', get);\n\n// getBlogPost('post1.md').then((blogPost) => {\n//   const md = document.createElement('mark-down');\n//   md.textContent = blogPost;\n//   document.body.appendChild(md);\n// });\n\n\n//# sourceURL=webpack://webbb/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var markdown_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! markdown-element */ \"./node_modules/markdown-element/index.js\");\n/* harmony import */ var markdown_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(markdown_element__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _game_random__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./game/random */ \"./src/game/random.js\");\n/* harmony import */ var _github_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./github/index */ \"./src/github/index.js\");\n/* harmony import */ var _github_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./github/service */ \"./src/github/service.js\");\n/* harmony import */ var _joke_Joke__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./joke/Joke */ \"./src/joke/Joke.js\");\n/* harmony import */ var _blog_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blog/index */ \"./src/blog/index.js\");\n/* harmony import */ var _aboutMe_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./aboutMe/index */ \"./src/aboutMe/index.js\");\n\n\n\n\n\n\n\n\n(0,_aboutMe_index__WEBPACK_IMPORTED_MODULE_6__[\"default\"])();\n// const section = document.getElementById('aboutMe');\n// getAboutMe('about-me.md').then((blogPost) => {\n//   const me = document.createElement('mark-down');\n//   me.textContent = blogPost;\n//   section.appendChild(me);\n// });\n\nwindow.controls = {\n  game: _game_random__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  get: _joke_Joke__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n};\n\n// const jokee = document.getElementById('jokee');\n// jokee.addEventListener('click', get);\n// const gamee = document.getElementById('gamee');\n// gamee.addEventListener('click', game);\n\n(0,_blog_index__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n\n// getBlogPost('post1.md').then((blogPost) => {\n//   const md = document.createElement('mark-down');\n//   md.textContent = blogPost;\n//   document.body.appendChild(md);\n// // });\n\n\n//# sourceURL=webpack://webbb/./src/index.js?");
 
 /***/ }),
 

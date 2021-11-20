@@ -9,12 +9,24 @@ module.exports = {
     filename: 'index_bundle.js',
     clean: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
   plugins: [new HtmlWebpackPlugin({
     template: './src/index.html',
   }),
   new HtmlWebpackPlugin({
     template: './src/blog/index.html',
     filename: 'blog/index.html',
+  }), new CopyPlugin({
+    patterns: [
+      { from: './src/blog/style.css', to: 'blog' },
+    ],
   }),
   new CopyPlugin({
     patterns: [
