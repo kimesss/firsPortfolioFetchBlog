@@ -7,9 +7,13 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Document</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
         .aboutMe {
-            margin: 25px;
-            max-width: 90vw;
+            margin: 50px;
         }
         .aboutMe img{
             height: 400px;
@@ -35,6 +39,9 @@
         }
 
         @media (max-width: 656px){
+            .aboutMe img{
+                margin: 0px;
+            }
             .aboutMe{
                 display: block;
                 text-align: center;
